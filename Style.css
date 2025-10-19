@@ -1,0 +1,167 @@
+/*
+style to make the scrolling of site smooth
+*/
+html{
+  scroll-behavior:smooth;
+}
+
+/*
+color to use in my portfolio website.
+#129BEC
+#ffffff
+#000000
+*/
+
+/*
+style to adjust body
+*/
+body{
+  font-family:Times New Roman !important;
+height: 100vh;
+  
+}
+/*
+adjust to header
+*/
+.header{
+  min-height: 10vh;
+  width: 100vw;
+  text-align: center;
+  background-color: #129BEC;
+  color: #000000;
+}
+
+/*
+style to adjust span that contains web name
+*/
+.webName{
+  width: 100px;
+  text-align: center;
+  justify-self: center;
+  font-size: 5vw;
+  font-weight: bold;
+  text-shadow: 2px 1px 1px #fff;
+}
+
+/*
+style to adjust nav link presentation
+*/
+.navLinks{
+  display: flex;
+  justify-content: space-around;
+}
+nav a{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 4vw;
+}
+
+/*
+adding some style to link when the user hover through it
+*/
+nav a:hover{
+  color:transparent;
+  text-decoration: none;
+  background:linear-gradient(135deg,#f00,#000,#ff0,#fff,#0f0);
+  background-size: 200%;
+  background-clip: text;
+  animation: colorChanging 3s infinite;
+}
+@keyframes colorChanging {
+  0%{
+    background-position: 0%;
+    transform: skew(-20deg,0deg);
+    scale: 1;
+  }
+ 25%{
+    background-position: 50%;
+  }
+  50%{
+    background-position: 100%;
+    transform: skew(0deg,20deg);
+    scale:1.5;
+  }
+  75%{
+    background-position: 50%;
+  }
+  100%{
+    background-position: 0%;
+    transform: skew(20deg,-20deg);
+    scale: 1;
+  }
+}
+/*
+general styling for section presentation
+*/
+.uniqueSection{
+  padding: 5vw;
+  min-width: 80vw;
+  min-height: 20vh;
+  margin: 5vw;
+  background-color: #000;
+  box-shadow: 10px 10px 1px #129BEC;
+  -moz-box-shadow: 10px 10px 1px #129BEC;
+  -webkit-box-shadow: 10px 10px 1px #129BEC;
+  color: #129BEC;
+}
+/*
+style for the image box
+*/
+.imgContainer{
+  justify-self: center;
+  width: 70%;
+  height: 30%;
+}
+/*
+code to edit paragraph text size
+*/
+.webDefinitionText{
+  font-size: 3vw;
+}
+h1{
+  color:#fff;
+}
+/*
+style to separate the progress bar indicating knowledgr level
+*/
+.languageSpan{
+  margin: 20px;
+}
+/*
+style for tge return button
+*/
+.returnButton{
+  min-width: 5vw;
+  border-radius: 10px;
+  padding: 2vw;
+  margin: 2vw;
+  position: fixed;
+  right:20px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: blue;
+  font-weight: bold;
+}
+.returnButton:hover{
+  text-decoration: none;
+  color: blue;
+  background:linear-gradient(135deg,#f00,#000,#ff0,#fff,#0f0);
+  background-size: 200%;
+  animation: colorChanging 3s infinite;
+}
+.footerHead{
+  font-size: 7vw;
+  font-weight: bold;
+}
+.bg-darkMe{
+  background-color: black;
+}
+.text{
+  font-size: 5vw;
+}
